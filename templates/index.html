@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top Courses</title>
+    <!-- Add your CSS and other head elements if needed -->
+    <style>
+        /* Add your CSS styles for the menu bar and table here */
+        /* For demonstration purposes, basic styling is shown */
+        .menubar {
+            background-color: #f2f2f2;
+            overflow: hidden;
+        }
+        .menubar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .menubar a:hover {
+            background-color: #ddd;
+        }
+        .menubar a.active {
+            background-color: #ccc;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Top Courses</h1></center>
+
+    <!-- Menu bar for navigation -->
+    <div class="menubar">
+        <a href="/" class="active">All</a>
+        <a href="/courses/Beginner">Beginner</a>
+        <a href="/courses/Mixed">Mixed</a>
+        <a href="/courses/Intermediate">Intermediate</a>
+        <!-- Add more menu items for other difficulty levels -->
+    </div>
+
+    <!-- Display the table of courses -->
+    <center>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th>URL</th>
+                    <th>Organization</th>
+                    <th>Certificate Type</th>
+                    <th>Rating</th>
+                    <th>Difficulty</th>
+                    <th>Students Enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for course in courses %}
+                    <tr>
+                        <td>{{ course['course_title'] }}</td>
+                        <td><a href="{{ course['course_URL'] }}">{{ course['course_URL'] }}</a></td>
+                        <td>{{ course['course_organization'] }}</td>
+                        <td>{{ course['course_Certificate_type'] }}</td>
+                        <td>{{ course['course_rating'] }}</td>
+                        <td>{{ course['course_difficulty'] }}</td>
+                        <td>{{ course['course_students_enrolled'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+
+    <!-- Add your scripts or other body elements if needed -->
+</body>
+</html>
