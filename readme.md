@@ -1,8 +1,11 @@
+# Find Courses with Top Most Ratings in Coursera
+
+## Technologies
 Database - MySql Database
 required python libries - pandas, sqlalchemy , Flask, 
 
 
-
+## How to Run
 Steps -
 1. Run Apache and MySql in Xammp.
 2. Import databasefile(.sql) to MySql server
