@@ -1,8 +1,8 @@
 # Find Courses with Top Most Ratings in Coursera
 
 ## Technologies
--Database - MySql Database
--required python libries - pandas, sqlalchemy , Flask, 
+- Database - MySql Database
+- required python libries - pandas, sqlalchemy , Flask, 
 
 
 ## How to Run
