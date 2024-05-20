@@ -11,3 +11,6 @@ Steps -
 2. Import databasefile(.sql) to MySql server
 2. Run app.py file (comand - python app.py)
 3. Open Web Browser and go to this localhost Link - http://127.0.0.1:5000
+
+## About Dataset
+- Uses open-source dataset relevant to Coursera. 
